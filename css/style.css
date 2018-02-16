@@ -1,0 +1,84 @@
+/* NAVBAR  */
+.navbar-default {
+  position: absolute;
+  width: 100%;
+  background-color: #44b579;
+  height: 130px;
+  border-color: transparent;
+}
+.navbar-brand > img  {
+  display: inline-block;
+}
+.navbar-brand > p {
+  display: inline-block;
+  font-size: 20px;
+  color: white;
+}
+.navbar-default .navbar-nav > li > a {
+  margin-top: 12px;
+  font-size: 20px;
+  color: white;
+}
+.navbar-collapse, ul {
+  background-color: #44b579;
+}
+.navbar-header {
+  padding-bottom: 20px;
+}
+.navbar-default .navbar-toggle  {
+  background-color: white;
+  margin-top: 24px;
+  border-color: transparent;
+}
+.navbar-default .navbar-toggle  {
+
+}
+.navbar-default .navbar-toggle:hover {
+  background-color: #359663;
+}
+.navbar-default .navbar-toggle:focus {
+  background-color: #359663;
+
+}
+.navbar-default .navbar-toggle p:hover {
+  color: white;
+}
+.navbar-default .navbar-toggle p {
+  margin: 0;
+  color: #44b579;
+  font-family: 'Open Sans', sans-serif;
+}
+.social {
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 20px 20px 0 0;
+}
+
+.fa {
+  font-size: 20px!important;
+  color: #44b579;
+}
+.fa-facebook {
+  position: relative;
+  top: 21%;
+  right: -30%;
+}
+.fa-twitter {
+  position: relative;
+  top: 21%;
+  right: -25%;
+}
+.fa-google{
+  position: relative;
+  top: 21%;
+  right: -27%;
+}
+/* SECTION 1 BACKGROUND */
+
+section.background img{
+  max-width: 100vw;
+
+}

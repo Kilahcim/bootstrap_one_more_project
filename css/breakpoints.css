@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+  .navbar-nav {
+    margin: 0 -15px;;
+  }
+  .navbar-right .social {
+    display: none;
+  }
+  .navbar-default .navbar-nav > li > a{
+    text-align: center;
+    border-bottom: 1px solid #3a9c67;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #3a9c67;
+  }
+}
