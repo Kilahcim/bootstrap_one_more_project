@@ -21,7 +21,10 @@
     color: #535353;
 
   }
-  .visibilite ul {
+  section.fourth .icon.first.padding{
+    padding-top: 0;
+  }
+  section.description .visibilite ul li .eye{
     display: none;
   }
   section.description p, section.description h2{
@@ -38,11 +41,13 @@
     right: -409%;
     color: black;
   }
-  .carousel-caption p{
+
+  .carousel-caption {
     font-size: 10px;
   }
-
-
+  .description .position-center li{
+    text-align: center;
+  }
 }
 
 @media (min-width: 351px) and (max-width: 996px) {
@@ -54,14 +59,10 @@
     margin-top: 35px;
   }
 
-  .navbar-default .navbar-nav > li > a{
-    text-align: center;
-    border-bottom: 1px solid #3a9c67;
-  }
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #3a9c67;
   }
-  .visibilite ul {
+  section.description .visibilite ul li .eye{
     display: none;
   }
   section.description p, section.description h2{
@@ -71,15 +72,42 @@
     padding-top: 0!important;
   }
   .carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
-    left: -200%;
+    left: -160%;
     color: black;
   }
   .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left {
-    left: 295%;
+    left: 270%;
     color: black;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    /* margin-top: 40px; */
+  }
+  .description .position-center li{
+    text-align: center;
+  }
+  section.fourth .icon.first.padding{
+    padding-top: 0;
+  }
+}
+@media (min-width: 768px) {
+  ul.navbar-nav {
+        margin: -4px 0 0 100px;
   }
 }
 
+@media (max-width:767px) {
+  .navbar-default .navbar-nav > li > a{
+    text-align: center;
+    border-bottom: 1px solid #3a9c67;
+
+  }
+  .navbar-default .navbar-brand {
+    margin-left: 25px;
+  }
+  section.fourth .icon.first.padding{
+    padding-top: 0;
+  }
+}
 @media (min-width: 997px) {
   section.description .border {
     width: 50%;
@@ -90,10 +118,18 @@
     display: inline-block;
   }
   .carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
-    left: -200%;
+    left: -190%;
     color: black;
   }
   .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left {
     left: 295%;
     color: black;
+  }
+  section.description .visibilite p:nth-child(3) {
+    display: none;
+  }
+  section.fourth .icon.padding{
+    padding-top: 0;
+  }
+
 }

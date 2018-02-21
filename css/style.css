@@ -27,16 +27,29 @@ p {
   padding: 18px 0 18px 0;
   text-align: center;
   font-weight: 900;
+  cursor: pointer;
 }
+
 .border span {
+  position: relative;
+  top: -4px;
   margin-left: 20px;
+}
+.border:hover {
+  transform: scale(1.2);
+}
+.border .last {
+  position: relative;
+  top: 0;
+
 }
 /* NAVBAR  */
 .navbar {
   margin-bottom: 0px;
 }
-ul.navbar-nav {
-      margin: 0px -15px;
+
+.navbarposition {
+  margin-top: 40px;
 }
 .navbar-default {
   z-index: 1000;
@@ -44,6 +57,9 @@ ul.navbar-nav {
   background-color: #44b579;
   height: 128px;
   border-color: transparent;
+}
+.navbar-brand {
+  padding: 0;
 }
 .navbar-brand > img  {
   display: inline-block;
@@ -54,7 +70,6 @@ ul.navbar-nav {
   color: white;
 }
 .navbar-default .navbar-nav > li > a {
-  margin-top: 12px;
   font-size: 20px;
   color: white;
 }
@@ -64,9 +79,11 @@ ul.navbar-nav {
 .navbar-header {
   padding-bottom: 20px;
 }
+.navbar-toggle {
+  margin-top: 0;
+}
 .navbar-default .navbar-toggle  {
   background-color: white;
-  margin-top: 18px;
   border-color: transparent;
 }
 .navbar-default .navbar-toggle:hover {
@@ -88,13 +105,16 @@ ul.navbar-nav {
   margin-right: -16px;
   margin-left: -16px;
 }
+.navbar-nav {
+  margin: 0px -15px;
+}
 .social {
   display: inline-block;
   height: 35px;
   width: 35px;
   border-radius: 50%;
   background-color: white;
-  margin: 20px 20px 0 0;
+  margin: 10px 20px 0 0;
 }
 
 .fab {
@@ -175,9 +195,7 @@ section.description p:nth-child(3) {
   line-height: 50px;
   font-weight: 900;
 }
-section.description .visibilite p:nth-child(3) {
-  display: none;
-}
+
 section.description .visibilite ul  {
   margin-top: 60px;
   background-color: #faf9f9;
@@ -207,7 +225,7 @@ section.fourth .icon .fa-users {
 
 }
 section.fourth .icon {
-  padding: 80px 0 50px 0 ;
+  padding: 80px 0 50px 0;
 }
 
 
@@ -217,7 +235,9 @@ section.fourth  h3 {
 /* SECTION 5th */
 /* ARROWS CAROUSEL EDITION */
 #myCarousel img{
-  max-height: 320px;
+  max-height: 330px;
+  overflow: hidden;
+  min-height: 330px;
 }
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
   position: absolute;
@@ -225,6 +245,7 @@ section.fourth  h3 {
 }
 .carousel-caption {
   text-shadow: 0 1px 1px rgba(0, 0, 0, .6);
+  position: static;
 }
 
 /* SECTION 6th */
@@ -264,17 +285,18 @@ section.sixth .send i {
 /* footer */
 footer .oslogos ul {
     background-color: #f9f9f9;
+    padding-left: 0;
 }
 footer .oslogos ul li {
   font-size: 50px;
   color: #dddddd;
   background-color: #f9f9f9;
   display: inline-block;
-  padding-right: 32px;
+  padding: 0 60px 0 60px;
   list-style: none;
-
 }
 footer  p {
+  margin-top: 60px;
   color: #605e5e;
   font-size: 12px;
 }
