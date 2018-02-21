@@ -1,10 +1,5 @@
-@media (max-width: 768px) {
-  .navbar-nav {
-    margin: 0 -15px;;
-  }
-  .navbar-right .social {
-    display: none;
-  }
+@media (max-width: 350px) {
+
   .navbar-default .navbar-nav > li > a{
     text-align: center;
     border-bottom: 1px solid #3a9c67;
@@ -12,4 +7,93 @@
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: #3a9c67;
   }
+  .navbar-right .social {
+    display: none;
+  }
+  section.header h1  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+
+  }
+  section.header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #535353;
+
+  }
+  .visibilite ul {
+    display: none;
+  }
+  section.description p, section.description h2{
+    text-align: center;
+  }
+  body > section.fourth > div > div > div:nth-child(1) > div   {
+    padding-top: 0!important;
+  }
+  .carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
+    left: -400%;
+    color: black;
+  }
+  .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left {
+    right: -409%;
+    color: black;
+  }
+  .carousel-caption p{
+    font-size: 10px;
+  }
+
+
+}
+
+@media (min-width: 351px) and (max-width: 996px) {
+
+  .navbar-right .social {
+    display: none;
+  }
+  section.header p {
+    margin-top: 35px;
+  }
+
+  .navbar-default .navbar-nav > li > a{
+    text-align: center;
+    border-bottom: 1px solid #3a9c67;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #3a9c67;
+  }
+  .visibilite ul {
+    display: none;
+  }
+  section.description p, section.description h2{
+    text-align: center;
+  }
+  body > section.fourth > div > div > div:nth-child(1) > div   {
+    padding-top: 0!important;
+  }
+  .carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
+    left: -200%;
+    color: black;
+  }
+  .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left {
+    left: 295%;
+    color: black;
+  }
+}
+
+@media (min-width: 997px) {
+  section.description .border {
+    width: 50%;
+    display: inline-block;
+    margin-right: 25px;
+  }
+  section.description p:last-child {
+    display: inline-block;
+  }
+  .carousel-control .icon-next, .carousel-control .glyphicon-chevron-right {
+    left: -200%;
+    color: black;
+  }
+  .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left {
+    left: 295%;
+    color: black;
 }
